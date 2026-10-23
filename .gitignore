@@ -6,6 +6,32 @@ dist/
 build/
 .eggs/
 *.egg-info/
+*.whl
+pip-wheel-metadata/
+
+# Compiled extensions / native build artifacts
+*.so
+*.so.*
+*.o
+*.a
+*.dylib
+*.dll
+*.pyd
+*.ptx
+*.cubin
+*.fatbin
+*.engine
+*.trt
+*.plan
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+.ninja_deps
+.ninja_log
+build.ninja
+_skbuild/
+torch_extensions/
+.cache/
 
 # uv
 .venv/
@@ -38,6 +64,54 @@ demo/live_demo/shot/
 demo/live_demo/captures/
 data/navigation*/
 benchmark/outputs/
+
+# Datasets (tracked demo assets such as replay_data_16/ are kept)
+data/
+datasets/
+dataset/
+raw_data/
+
+# Checkpoints / model weights (tracked demo policies *.onnx are kept)
+checkpoints/
+checkpoint/
+ckpt/
+ckpts/
+weights/
+pretrained/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Training / experiment outputs
+outputs/
+output/
+results/
+logs/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+videos/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.gif
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
 
 # Local tool/runtime artifacts
 *.log
